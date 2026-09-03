@@ -13,10 +13,21 @@
   <link rel="stylesheet" href="dialogues.css" />
   <link rel="stylesheet" href="enrichment.css" />
   <link rel="stylesheet" href="video.css" />
+  <style>
+    .portrait img{height:700px!important;object-position:50% 26%!important}
+    .scene{isolation:isolate;background:radial-gradient(circle at 12% 15%,#8e73b2 0,transparent 29%),radial-gradient(circle at 90% 88%,#d47cac 0,transparent 25%),linear-gradient(145deg,#211c3a,#4a356d 48%,#805080)}
+    .scene:before,.scene:after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none}
+    .scene:before{opacity:.92;background:radial-gradient(2px 2px at 4% 9%,#fff 0 42%,transparent 68%),radial-gradient(1px 1px at 11% 22%,#ffe9fa 0 55%,transparent 75%),radial-gradient(1.5px 1.5px at 17% 5%,#fff 0 48%,transparent 70%),radial-gradient(1px 1px at 23% 88%,#f8d7ff 0 55%,transparent 75%),radial-gradient(2px 2px at 31% 14%,#fff 0 44%,transparent 67%),radial-gradient(1px 1px at 38% 96%,#ffe9fa 0 55%,transparent 75%),radial-gradient(1.5px 1.5px at 46% 7%,#fff 0 48%,transparent 70%),radial-gradient(1px 1px at 57% 91%,#f8d7ff 0 55%,transparent 75%),radial-gradient(2px 2px at 65% 12%,#fff 0 44%,transparent 67%),radial-gradient(1px 1px at 74% 84%,#ffe9fa 0 55%,transparent 75%),radial-gradient(1.5px 1.5px at 82% 5%,#fff 0 48%,transparent 70%),radial-gradient(1px 1px at 89% 95%,#f8d7ff 0 55%,transparent 75%),radial-gradient(2px 2px at 96% 18%,#fff 0 44%,transparent 67%)}
+    .scene:after{display:none}
+    .meteor{position:absolute;z-index:0;width:155px;height:2px;pointer-events:none;opacity:.9;transform:rotate(-28deg);background:linear-gradient(90deg,transparent 0,rgba(240,216,255,.28) 25%,rgba(255,255,255,.98) 95%);box-shadow:0 0 8px rgba(255,220,249,.85);animation:meteor-glide 7s ease-in-out infinite}.meteor:after{content:"";position:absolute;right:-1px;top:-2px;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 10px 3px rgba(255,224,250,.8)}.meteor-a{top:42px;left:5%;animation-delay:-1s}.meteor-b{right:5%;bottom:48px;width:125px;animation-delay:-4s}.meteor-c{left:2%;bottom:150px;width:95px;animation-delay:-6s;opacity:.65}@keyframes meteor-glide{0%,100%{opacity:.16;transform:translate3d(0,0,0) rotate(-28deg)}38%{opacity:.95}55%{opacity:.08;transform:translate3d(70px,56px,0) rotate(-28deg)}}
+    @media(max-width:700px){.portrait img{height:640px!important;object-position:50% 21%!important}.meteor{transform:scale(.65) rotate(-28deg)}.meteor-a{left:-24px}.meteor-b{right:-28px}.meteor-c{bottom:110px}}
+    .meteor-d{top:34px;right:2%;width:220px;animation-delay:-2.2s}.meteor-e{top:116px;right:8%;width:130px;animation-delay:-5.1s;opacity:.72}.meteor-f{top:250px;right:-3%;width:185px;animation-delay:-3.6s;opacity:.8}@keyframes meteor-glide{0%,100%{opacity:.12;transform:translate3d(0,0,0) rotate(-28deg)}38%{opacity:.96}55%{opacity:.07;transform:translate3d(-120px,92px,0) rotate(-28deg)}}
+    .meteor{transform:rotate(152deg)}@keyframes meteor-glide{0%,100%{opacity:.12;transform:translate3d(0,0,0) rotate(152deg)}38%{opacity:.96}55%{opacity:.07;transform:translate3d(-120px,92px,0) rotate(152deg)}}
+  </style>
 </head>
 <body>
   <main class="scene">
-    <div class="glow glow-one"></div><div class="glow glow-two"></div>
+    <div class="glow glow-one"></div><div class="glow glow-two"></div><i class="meteor meteor-a" aria-hidden="true"></i><i class="meteor meteor-b" aria-hidden="true"></i><i class="meteor meteor-c" aria-hidden="true"></i><i class="meteor meteor-d" aria-hidden="true"></i><i class="meteor meteor-e" aria-hidden="true"></i><i class="meteor meteor-f" aria-hidden="true"></i>
     <section class="mission" aria-labelledby="mission-title">
       <div class="paper-grain"></div>
       <div class="rank-seal" aria-hidden="true"><small>PRIORITY</small><b>S</b><small>RANK</small></div>
